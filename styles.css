@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-color: rgb(26, 35, 93);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+.calculator{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(36, 36, 36);
+    max-width: 273px;
+}
+input, .operator, .equal{
+    padding: 10px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    outline: none;
+    font-size: 23px;
+    border: 2px solid;
+    transition: 0.25s;
+    
+}
+.equal, .AC{
+    width: 124px;
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+    height: 90px;
+    font-size: 27px;
+    font-weight: 600;
+    background-color: grey;
+    border-radius: 2px;
+    padding: 20px;
+    overflow: hidden;
+}
+.display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    background-color: transparent;
+}
+.operator{
+    background-color: orange;
+}
+input{
+    background-color: rgb(145, 145, 252);
+}
+.equal{
+    background-color: rgb(196, 196, 196);
+}
+input:hover, button:hover{
+    opacity: 0.7;
+}
