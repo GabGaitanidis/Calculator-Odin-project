@@ -86,16 +86,23 @@ equal.addEventListener('click', () => {
     if(!firstNumber && !operation && !secondNumber){
         alert('Put number')
     } else if(firstNumber && operation && secondNumber){
-    display.textContent += result;
-    firstNumber = result;
-    secondNumber = ''
-    operation = ''
-    updateDisplay()
-    } else{
-    alert('Put number')
-}
-    
+        let roundedResult;
+        if (!Number.isInteger(result)) {
+           
+            roundedResult = result.toFixed(2);
+        } else {
+            roundedResult = result.toString();
+        }
+        display.textContent += roundedResult;
+        firstNumber = roundedResult;
+        secondNumber = '';
+        operation = '';
+        updateDisplay();
+    } else {
+        alert('Put number');
+    }
 });
+
 
 
 

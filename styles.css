@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+    font-weight: 500;
 }
 body{
-    background-color: rgb(26, 35, 93);
+    background-color: rgb(115, 119, 137);
 }
 .container{
     display: flex;
@@ -18,7 +19,7 @@ body{
 .calculator{
     border-radius: 10px;
     padding: 10px;
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(209, 204, 204);
     max-width: 273px;
 }
 input, .operator, .equal{
@@ -30,7 +31,7 @@ input, .operator, .equal{
     font-size: 23px;
     border: 2px solid;
     transition: 0.25s;
-    
+    cursor: pointer;
 }
 .equal, .AC{
     width: 124px;
@@ -45,8 +46,9 @@ input, .operator, .equal{
     font-weight: 600;
     background-color: grey;
     border-radius: 2px;
-    padding: 20px;
+    padding: 27px;
     overflow: hidden;
+    border: 3px solid;
 }
 .display input{
     text-align: right;
@@ -55,15 +57,15 @@ input, .operator, .equal{
     box-shadow: none;
     background-color: transparent;
 }
-.operator{
+.operator, .equal{
     background-color: orange;
 }
 input{
-    background-color: rgb(145, 145, 252);
-}
-.equal{
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(154, 168, 247);
 }
 input:hover, button:hover{
     opacity: 0.7;
+}
+.AC{
+    background-color: rgb(255, 0, 0);
 }
