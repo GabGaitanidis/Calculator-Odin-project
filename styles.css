@@ -18,9 +18,10 @@ body{
 }
 .calculator{
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(209, 204, 204);
-    max-width: 273px;
+    overflow: hidden;
+    max-width: 309px;
 }
 input, .operator, .equal{
     padding: 10px;
@@ -29,8 +30,10 @@ input, .operator, .equal{
     width: 60px;
     outline: none;
     font-size: 23px;
-    border: 2px solid;
+    border: none;
+    border-radius: 20px;
     transition: 0.25s;
+    margin: 2px;
     cursor: pointer;
 }
 .equal, .AC{
@@ -41,7 +44,7 @@ input, .operator, .equal{
     display: flex;
     justify-content: flex-end;
     margin: 20px 0px;
-    height: 90px;
+    height: 100px;
     font-size: 27px;
     font-weight: 600;
     background-color: grey;
